@@ -4,19 +4,23 @@ import org.junit.Test
 class TemplateTest {
 
   @Test
-  fun sample() {
-    val input = getResourceAsString("template.txt")
-    assertEquals("Hello, world!", input)
+  fun part1sample() {
+    assertEquals("", Template.part1(""))
   }
 
   @Test
-  fun window() {
-    assertEquals(listOf(listOf(1, 2, 3), listOf(2, 3, 4)), listOf(1, 2, 3, 4).windowed(3))
+  fun part1() {
+    assertEquals("", Template.part1(getResourceAsString("template.txt")))
   }
 
   @Test
-  fun chunked() {
-    assertEquals(listOf(listOf(1, 2, 3), listOf(4)), listOf(1, 2, 3, 4).chunked(3))
+  fun part2sample() {
+    assertEquals("", Template.part2(""))
+  }
+
+  @Test
+  fun part2() {
+    assertEquals("", Template.part2(getResourceAsString("template.txt")))
   }
 
 }
