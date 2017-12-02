@@ -1,3 +1,5 @@
+package utils
+
 import org.apache.commons.codec.binary.Hex
 import org.apache.commons.codec.digest.DigestUtils
 import java.util.*
@@ -74,7 +76,7 @@ fun Iterable<Char>.charCounts(): Map<Char, Int> {
   })
 }
 
-// A not-particularly-efficient combinations algorithm
+// A not-particularly-efficient utils.combinations algorithm
 fun <T> Collection<T>.combinations(n: Int): Collection<List<T>> {
   if (n == 0) {
     return listOf(emptyList())

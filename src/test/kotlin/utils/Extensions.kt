@@ -1,3 +1,5 @@
+package utils
+
 import com.google.common.io.Resources
 import java.nio.charset.Charset
 
