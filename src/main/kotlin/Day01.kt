@@ -3,8 +3,8 @@ import Day01.sumAllDigitsThatMatchHalfwayAroundDigitInList
 import Day01.sumAllDigitsThatMatchNextDigitInList
 
 fun main(args: Array<String>) {
-    println("Day 1 Pt. One Answer:\t" + sumAllDigitsThatMatchNextDigitInList(PUZZLE_INPUT))
-    println("Day 1 Pt. Two Answer:\t" + sumAllDigitsThatMatchHalfwayAroundDigitInList(PUZZLE_INPUT))
+    println("Day 01 Pt. One Answer:\t" + sumAllDigitsThatMatchNextDigitInList(PUZZLE_INPUT))
+    println("Day 01 Pt. Two Answer:\t" + sumAllDigitsThatMatchHalfwayAroundDigitInList(PUZZLE_INPUT))
 }
 
 /**
