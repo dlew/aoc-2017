@@ -1,6 +1,5 @@
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import utils.getResourceAsString
 
 class Day03Test {
 
