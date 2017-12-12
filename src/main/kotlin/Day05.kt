@@ -4,7 +4,7 @@ import utils.toIntList
 object Day05 {
 
   fun stepsToEscape(input: String, usePartTwoRules: Boolean): Int {
-    val instructions = input.splitNewlines().toIntList().toMutableList()
+    val instructions = input.splitNewlines().toIntList().toIntArray()
     var index = 0
     var steps = 0
     while (index in 0 until instructions.size) {
