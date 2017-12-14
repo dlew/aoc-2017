@@ -4,17 +4,17 @@ import utils.getResourceAsString
 
 class TemplateTest {
 
-  fun part1(input: String): String {
+  fun part1(input: String): Any {
     return input
   }
 
-  fun part2(input: String): String {
+  fun part2(input: String): Any {
     return input
   }
 
   @Test
   fun part1sample() {
-    assertEquals("Hello!", part1(getResourceAsString("template-sample1.txt")))
+    assertEquals("Hello!", part1(getResourceAsString("template-sample.txt")))
   }
 
   @Test
@@ -24,7 +24,7 @@ class TemplateTest {
 
   @Test
   fun part2sample() {
-    assertEquals("Goodbye!", part2(getResourceAsString("template-sample2.txt")))
+    assertEquals("Hello!", part2(getResourceAsString("template-sample.txt")))
   }
 
   @Test
