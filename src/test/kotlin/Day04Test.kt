@@ -1,3 +1,5 @@
+import answer.Answer
+import answer.answerEquals
 import org.junit.Assert.*
 import org.junit.Test
 import utils.getResourceAsString
@@ -17,7 +19,7 @@ class Day04Test {
     val count = getResourceAsString("day04.txt").splitNewlines()
         .sumBy { if (Day04.part1(it)) 1 else 0 }
 
-    assertEquals(477, count)
+    answerEquals(Answer.DAY04_PART1, count)
   }
 
   @Test
@@ -34,7 +36,7 @@ class Day04Test {
     val count = getResourceAsString("day04.txt").splitNewlines()
         .sumBy { if (Day04.part2(it)) 1 else 0 }
 
-    assertEquals(167, count)
+    answerEquals(Answer.DAY04_PART2, count)
   }
 
 }

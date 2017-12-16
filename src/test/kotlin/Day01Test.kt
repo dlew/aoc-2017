@@ -1,3 +1,5 @@
+import answer.Answer
+import answer.answerEquals
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import utils.getResourceAsString
@@ -14,7 +16,7 @@ class Day01Test {
 
   @Test
   fun part1() {
-    assertEquals(1136, Day01.sum(getResourceAsString("day01.txt")))
+    answerEquals(Answer.DAY01_PART1, Day01.sum(getResourceAsString("day01.txt")))
   }
 
   @Test
@@ -28,6 +30,6 @@ class Day01Test {
 
   @Test
   fun part2() {
-    assertEquals(1092, Day01.sum2(getResourceAsString("day01.txt")))
+    answerEquals(Answer.DAY01_PART2, Day01.sum2(getResourceAsString("day01.txt")))
   }
 }

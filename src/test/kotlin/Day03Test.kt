@@ -1,3 +1,5 @@
+import answer.Answer
+import answer.answerEquals
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
@@ -13,7 +15,7 @@ class Day03Test {
 
   @Test
   fun part1() {
-    assertEquals(371, Day03.part1(368078))
+    answerEquals(Answer.DAY03_PART1, Day03.part1(368078))
   }
 
   @Test
@@ -23,7 +25,7 @@ class Day03Test {
 
   @Test
   fun part2() {
-    assertEquals(369601, Day03.part2(368078))
+    answerEquals(Answer.DAY03_PART2, Day03.part2(368078))
   }
 
 }

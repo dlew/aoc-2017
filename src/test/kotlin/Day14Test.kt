@@ -1,3 +1,5 @@
+import answer.Answer
+import answer.answerEquals
 import grid.Point
 import org.junit.Assert.assertEquals
 import org.junit.Test
@@ -11,7 +13,7 @@ class Day14Test {
 
   @Test
   fun part1() {
-    assertEquals(8204, Day14.part1("xlqgujun"))
+    answerEquals(Answer.DAY14_PART1, Day14.part1("xlqgujun"))
   }
 
   @Test
@@ -21,7 +23,7 @@ class Day14Test {
 
   @Test
   fun part2() {
-    assertEquals(1089, Day14.part2("xlqgujun"))
+    answerEquals(Answer.DAY14_PART2, Day14.part2("xlqgujun"))
   }
 
 }

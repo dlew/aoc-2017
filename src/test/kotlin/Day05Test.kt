@@ -1,3 +1,5 @@
+import answer.Answer
+import answer.answerEquals
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import utils.getResourceAsString
@@ -11,7 +13,7 @@ class Day05Test {
 
   @Test
   fun part1() {
-    assertEquals(359348, Day05.stepsToEscape(getResourceAsString("day05.txt"), false))
+    answerEquals(Answer.DAY05_PART1, Day05.stepsToEscape(getResourceAsString("day05.txt"), false))
   }
 
   @Test
@@ -21,7 +23,7 @@ class Day05Test {
 
   @Test
   fun part2() {
-    assertEquals(27688760, Day05.stepsToEscape(getResourceAsString("day05.txt"), true))
+    answerEquals(Answer.DAY05_PART2, Day05.stepsToEscape(getResourceAsString("day05.txt"), true))
   }
 
 }

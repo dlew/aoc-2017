@@ -1,3 +1,4 @@
+import answer.Answer
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import utils.getResourceAsString
@@ -11,7 +12,7 @@ class Day25Test {
 
   @Test
   fun part1() {
-    assertEquals(5593, Day25.part1(getResourceAsString("day25.txt")))
+    assertEquals(Answer.DAY25_PART1, Day25.part1(getResourceAsString("day25.txt")))
   }
 
 }

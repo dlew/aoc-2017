@@ -1,3 +1,5 @@
+import answer.Answer
+import answer.answerEquals
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import kotlin.coroutines.experimental.buildSequence
@@ -11,7 +13,7 @@ class Day15Test {
 
   @Test
   fun part1() {
-    assertEquals(567, Day15.part1(512, 191))
+    answerEquals(Answer.DAY15_PART1, Day15.part1(512, 191))
   }
 
   @Test
@@ -21,7 +23,7 @@ class Day15Test {
 
   @Test
   fun part2() {
-    assertEquals(323, Day15.part2(512, 191))
+    answerEquals(Answer.DAY15_PART2, Day15.part2(512, 191))
   }
 
 }

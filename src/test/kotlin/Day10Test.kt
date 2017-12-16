@@ -1,3 +1,5 @@
+import answer.Answer
+import answer.answerEquals
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import utils.*
@@ -12,7 +14,7 @@ class Day10Test {
 
   @Test
   fun part1() {
-    assertEquals(13760, Day10.part1("227,169,3,166,246,201,0,47,1,255,2,254,96,3,97,144"))
+    answerEquals(Answer.DAY10_PART1, Day10.part1("227,169,3,166,246,201,0,47,1,255,2,254,96,3,97,144"))
   }
 
   @Test
@@ -25,7 +27,7 @@ class Day10Test {
 
   @Test
   fun part2() {
-    assertEquals("2da93395f1a6bb3472203252e3b17fe5",
+    answerEquals(Answer.DAY10_PART2,
         Day10.part2("227,169,3,166,246,201,0,47,1,255,2,254,96,3,97,144"))
   }
 
