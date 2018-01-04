@@ -2,13 +2,13 @@ import kotlin.coroutines.experimental.buildSequence
 
 object Day15 {
 
-  fun part1(startA: Int, startB: Int): Any {
+  fun part1(startA: Int, startB: Int): Int {
     val generatorA = makeGenerator(startA, 16807)
     val generatorB = makeGenerator(startB, 48271)
     return matches(generatorA, generatorB, 40000000)
   }
 
-  fun part2(startA: Int, startB: Int): Any {
+  fun part2(startA: Int, startB: Int): Int {
     val generatorA = makeGenerator(startA, 16807, 4)
     val generatorB = makeGenerator(startB, 48271, 8)
     return matches(generatorA, generatorB, 5000000)

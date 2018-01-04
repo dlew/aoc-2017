@@ -2,13 +2,13 @@ import grid.Point
 
 object Day14 {
 
-  fun part1(input: String): Any {
+  fun part1(input: String): Int {
     return inputToDisk(input).sumBy { row ->
       row.sumBy { if (it) 1 else 0 }
     }
   }
 
-  fun part2(input: String): Any {
+  fun part2(input: String): Int {
     val disk = inputToDisk(input)
 
     val unvisited = mutableSetOf<Point>()

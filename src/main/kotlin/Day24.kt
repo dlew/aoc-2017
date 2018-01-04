@@ -2,11 +2,11 @@ import utils.splitNewlines
 
 object Day24 {
 
-  fun part1(input: String): Any {
+  fun part1(input: String): Int {
     return strongestBridge(0, parseComponents(input))
   }
 
-  fun part2(input: String): Any {
+  fun part2(input: String): Int {
     return longestAndStrongestBridge(0, parseComponents(input)).strength
   }
 

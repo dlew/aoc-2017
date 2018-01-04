@@ -5,7 +5,7 @@ import utils.splitNewlines
 
 object Day22 {
 
-  fun part1(input: String, iterations: Int): Any {
+  fun part1(input: String, iterations: Int): Int {
     val midpoint = (input.splitNewlines().size / 2)
     val infections = parse(input).toMutableSet()
     var carrier = Point(midpoint, midpoint)
@@ -33,7 +33,7 @@ object Day22 {
     return infectionCount
   }
 
-  fun part2(input: String, iterations: Int): Any {
+  fun part2(input: String, iterations: Int): Int {
     val midpoint = (input.splitNewlines().size / 2)
     val infections = parse(input).associate { it to State.INFECTED }.toMutableMap()
     var carrier = Point(midpoint, midpoint)

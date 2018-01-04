@@ -5,7 +5,7 @@ import java.util.regex.Pattern
 
 object Day25 {
 
-  fun part1(input: String): Any {
+  fun part1(input: String): Int {
     val blueprint = parseBlueprint(input)
 
     val states = blueprint.states.associateBy { it.name }

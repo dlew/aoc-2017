@@ -3,27 +3,27 @@ import utils.splitWhitespace
 
 object Day18 {
 
-  fun part1(input: String): Any {
+  fun part1(input: String): Int {
     val instructions: List<Instruction> = input.splitNewlines().map(this::parseInstruction)
     val machine = Machine(instructions = instructions)
 
-    var lastSendValue = 0L
+    var lastSendValue = 0
     do {
       val message = machine.nextMessage()
       if (message is Message.Send) {
-        lastSendValue = message.number
+        lastSendValue = message.number.toInt()
       }
     } while (message !is Message.Receive)
 
     return lastSendValue
   }
 
-  fun part2(input: String): Any {
+  fun part2(input: String): Int {
     val instructions: List<Instruction> = input.splitNewlines().map(this::parseInstruction)
     val machine0 = Machine(instructions = instructions, initialPValue = 0L)
     val machine1 = Machine(instructions = instructions, initialPValue = 1L)
 
-    var count = 0L
+    var count = 0
     do {
       val message0 = machine0.nextMessage()
       val message1 = machine1.nextMessage()

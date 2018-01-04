@@ -8,7 +8,7 @@ class Day23Test {
 
   @Test
   fun part1() {
-    assertEquals(8281L, Day23.part1(getResourceAsString("day23.txt")))
+    assertEquals(8281, Day23.part1(getResourceAsString("day23.txt")))
   }
 
   @Test

@@ -3,12 +3,12 @@ import utils.splitWhitespace
 
 object Day23 {
 
-  fun part1(input: String): Any {
+  fun part1(input: String): Int {
     val instructions = input.splitNewlines().map(this::parseInstruction)
     var pointer = 0
     val registers = mutableMapOf<Char, Long>().withDefault { 0 }
 
-    var mulCount = 0L
+    var mulCount = 0
     while (pointer < instructions.size) {
       val instruction = instructions[pointer]
 
@@ -42,7 +42,7 @@ object Day23 {
   }
 
   // The secret is that the code is just counting prime numbers in a range
-  fun part2(input: String, initialAValue: Int): Any {
+  fun part2(input: String, initialAValue: Int): Int {
     var start = if (initialAValue == 0) 93 else 109300
     var end = if (initialAValue == 0) 93 else 126300
     return (start..end step 17).count { it.isPrime() }
