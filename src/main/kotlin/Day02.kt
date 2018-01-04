@@ -4,7 +4,7 @@ import utils.toIntList
 
 object Day02 {
 
-  fun checksum(input: String): Int {
+  fun part1(input: String): Int {
     return input.splitNewlines().sumBy {
       val values = it.splitWhitespace().toIntList()
       var min = values.minBy { it }!!
@@ -13,7 +13,7 @@ object Day02 {
     }
   }
 
-  fun checksum2(input: String): Int {
+  fun part2(input: String): Int {
     return input.splitNewlines().sumBy {
       val values = it.splitWhitespace().toIntList()
       for (a in 0 until values.size) {

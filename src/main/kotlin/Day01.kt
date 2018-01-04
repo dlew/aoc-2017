@@ -2,7 +2,7 @@ import utils.toIntList
 
 object Day01 {
 
-  fun sum(input: String): Int {
+  fun part1(input: String): Int {
     val intInput = input.toIntList()
     val circledInput = intInput + listOf(intInput[0])
     return circledInput.windowed(2)
@@ -10,7 +10,7 @@ object Day01 {
         .sumBy { it[0] }
   }
 
-  fun sum2(input: String): Int {
+  fun part2(input: String): Int {
     val intInput = input.toIntList()
     val size = intInput.size
     val halfSize = size / 2

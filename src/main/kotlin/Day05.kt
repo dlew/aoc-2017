@@ -3,7 +3,15 @@ import utils.toIntList
 
 object Day05 {
 
-  fun stepsToEscape(input: String, usePartTwoRules: Boolean): Int {
+  fun part1(input: String): Int {
+    return stepsToEscape(input, false)
+  }
+
+  fun part2(input: String): Int {
+    return stepsToEscape(input, true)
+  }
+
+  private fun stepsToEscape(input: String, usePartTwoRules: Boolean): Int {
     val instructions = input.splitNewlines().toIntList().toIntArray()
     var index = 0
     var steps = 0

@@ -8,22 +8,22 @@ class Day05Test {
 
   @Test
   fun part1sample() {
-    assertEquals(5, Day05.stepsToEscape(getResourceAsString("day05-sample.txt"), false))
+    assertEquals(5, Day05.part1(getResourceAsString("day05-sample.txt")))
   }
 
   @Test
   fun part1() {
-    answerEquals(Answer.DAY05_PART1, Day05.stepsToEscape(getResourceAsString("day05.txt"), false))
+    answerEquals(Answer.DAY05_PART1, Day05.part1(getResourceAsString("day05.txt")))
   }
 
   @Test
   fun part2sample() {
-    assertEquals(10, Day05.stepsToEscape(getResourceAsString("day05-sample.txt"), true))
+    assertEquals(10, Day05.part2(getResourceAsString("day05-sample.txt")))
   }
 
   @Test
   fun part2() {
-    answerEquals(Answer.DAY05_PART2, Day05.stepsToEscape(getResourceAsString("day05.txt"), true))
+    answerEquals(Answer.DAY05_PART2, Day05.part2(getResourceAsString("day05.txt")))
   }
 
 }

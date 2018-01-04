@@ -8,22 +8,22 @@ class Day02Test {
 
   @Test
   fun part1sample() {
-    assertEquals(18, Day02.checksum(getResourceAsString("day02-sample1.txt")))
+    assertEquals(18, Day02.part1(getResourceAsString("day02-sample1.txt")))
   }
 
   @Test
   fun part1() {
-    answerEquals(Answer.DAY02_PART1, Day02.checksum(getResourceAsString("day02.txt")))
+    answerEquals(Answer.DAY02_PART1, Day02.part1(getResourceAsString("day02.txt")))
   }
 
   @Test
   fun part2sample() {
-    assertEquals(9, Day02.checksum2(getResourceAsString("day02-sample2.txt")))
+    assertEquals(9, Day02.part2(getResourceAsString("day02-sample2.txt")))
   }
 
   @Test
   fun part2() {
-    answerEquals(Answer.DAY02_PART2, Day02.checksum2(getResourceAsString("day02.txt")))
+    answerEquals(Answer.DAY02_PART2, Day02.part2(getResourceAsString("day02.txt")))
   }
 
 }
