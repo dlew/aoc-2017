@@ -2,8 +2,6 @@ import answer.Answer
 import answer.answerEquals
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import utils.*
-import java.util.*
 
 class Day10Test {
 

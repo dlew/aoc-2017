@@ -2,7 +2,6 @@ import answer.Answer
 import answer.answerEquals
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import kotlin.coroutines.experimental.buildSequence
 
 class Day15Test {
 

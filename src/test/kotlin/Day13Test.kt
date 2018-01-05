@@ -3,8 +3,6 @@ import answer.answerEquals
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import utils.getResourceAsString
-import utils.splitNewlines
-import utils.toIntList
 
 class Day13Test {
 
