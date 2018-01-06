@@ -3,10 +3,6 @@ import answer.answerEquals
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import utils.getResourceAsString
-import utils.splitCommas
-import utils.splitNewlines
-import utils.toIntList
-import java.util.regex.Pattern
 
 class Day12Test {
 

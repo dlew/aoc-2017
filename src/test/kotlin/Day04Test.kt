@@ -1,9 +1,7 @@
 import answer.Answer
 import answer.answerEquals
-import org.junit.Assert.*
 import org.junit.Test
 import utils.getResourceAsString
-import utils.splitNewlines
 
 class Day04Test {
 

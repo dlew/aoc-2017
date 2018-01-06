@@ -1,6 +1,5 @@
 import answer.Answer
 import answer.answerEquals
-import grid.Point
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
